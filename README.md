@@ -11,6 +11,11 @@ Circuit SDKの導入前/導入後の状態をブランチ分けして用意し�
 * master     :Circuit SDKを未導入状態のブランチとなります。
 * use-circuit:Circuit SDKを導入済み状態のブランチとなります。
 
-#### リンク
+#### ディープリンク
 * 商品詳細ページ:circuitdemo://deepLinkItemId/{商品番号(1 ~ 3)}
 * 設定ページ    :circuitdemo://deepLinkClass
+
+### Circuitサイト
+* トップページ :http://www.cir.io/
+* ドキュメント :https://developer.cir.io/doc/cds
+* FAQ          :https://developer.cir.io/faq/cds
