@@ -1,0 +1,10 @@
+PODS:
+  - CircuitDeeplinkingSupporter (1.0.8)
+
+DEPENDENCIES:
+  - CircuitDeeplinkingSupporter
+
+SPEC CHECKSUMS:
+  CircuitDeeplinkingSupporter: 23f3b2d26eaac1ac810ce53ce3d4b53c884aeba8
+
+COCOAPODS: 0.37.1

@@ -50,8 +50,14 @@
 - (NSDictionary *)getItem {
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     NSDictionary *items = [ud dictionaryForKey:@"items"];
-    NSString *itemId = self.itemId;
-    return [items objectForKey:itemId];
+
+    //deeplinkでの遷移の場合CDSitemIdを使う
+    if (self.CDSitemId != nil)
+        {
+            self.itemId = self.CDSitemId;
+        }
+    
+    return [items objectForKey:self.itemId];
 }
 
 - (void)addCart {

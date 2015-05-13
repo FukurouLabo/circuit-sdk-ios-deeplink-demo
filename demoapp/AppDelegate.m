@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <CircuitDeepLinking/CircuitDeepLink.h>
 
 @interface AppDelegate ()
 
@@ -16,7 +17,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
+    // 開発モードのON/OFF設定
+    [[CircuitDeepLink sharedInstance] setEnabledOutputLogging:YES];
+    
+    // SDK読み込み用のコード(CDS)
+    [[CircuitDeepLink sharedInstance] setAppId:@"a0000063489"];
+    
+    // 遷移前に実行するアクション(CDS)
+    [[CircuitDeepLink sharedInstance] registerHandlerWithName:@"beforeMoveItemDetail" handler:^void(NSDictionary *params) {
+        NSLog(@"beforeMoveItemDetail");
+    }];
     [self initData];
     
     return YES;
@@ -80,6 +90,13 @@
         return;
     }
     [ud setObject:jsonObject forKey:@"items"];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    // ディープリンクでアプリ起動した際の処理(CDS)
+    [[CircuitDeepLink sharedInstance] routeUsingUrl:url];
+    return YES;
 }
 
 @end
