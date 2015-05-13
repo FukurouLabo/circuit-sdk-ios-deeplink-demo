@@ -1,14 +1,17 @@
 {
     "1": {
         "name": "にんじん",
-        "price": "100"
+        "price": "100",
+        "img": "carrot.jpg"
     },
     "2": {
         "name": "トマト",
-        "price": "200"
+        "price": "200",
+        "img": "tomato.jpg"
     },
     "3": {
         "name": "じゃがいも",
-        "price": "50"
+        "price": "50",
+        "img":"potato.jpg"
     }
 }

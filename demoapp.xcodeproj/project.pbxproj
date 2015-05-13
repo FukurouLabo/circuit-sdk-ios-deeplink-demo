@@ -21,6 +21,9 @@
 		436E98D41AF25F7500F207FB /* ThanksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 436E98D31AF25F7500F207FB /* ThanksViewController.m */; };
 		436E98D81AF29F1100F207FB /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 436E98D61AF29F1100F207FB /* SettingViewController.m */; };
 		436E98D91AF29F1100F207FB /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 436E98D71AF29F1100F207FB /* SettingViewController.xib */; };
+		4382E4261B033157002792F2 /* potato.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4382E4251B033157002792F2 /* potato.jpg */; };
+		4382E4281B0331AB002792F2 /* carrot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4382E4271B0331AB002792F2 /* carrot.jpg */; };
+		4382E42A1B0331C4002792F2 /* tomato.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4382E4291B0331C4002792F2 /* tomato.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		436E98D51AF29F1100F207FB /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		436E98D61AF29F1100F207FB /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		436E98D71AF29F1100F207FB /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		4382E4251B033157002792F2 /* potato.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = potato.jpg; sourceTree = "<group>"; };
+		4382E4271B0331AB002792F2 /* carrot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = carrot.jpg; sourceTree = "<group>"; };
+		4382E4291B0331C4002792F2 /* tomato.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tomato.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +159,7 @@
 		436E98B11AEF3E5300F207FB /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				4382E4241B033138002792F2 /* images */,
 				436E98C61AEFAD3900F207FB /* etc */,
 			);
 			name = resources;
@@ -164,6 +171,16 @@
 				436E98C71AEFAD7000F207FB /* Items.json */,
 			);
 			name = etc;
+			sourceTree = "<group>";
+		};
+		4382E4241B033138002792F2 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				4382E4291B0331C4002792F2 /* tomato.jpg */,
+				4382E4271B0331AB002792F2 /* carrot.jpg */,
+				4382E4251B033157002792F2 /* potato.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,9 +263,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4382E4281B0331AB002792F2 /* carrot.jpg in Resources */,
 				436E98C81AEFAD7000F207FB /* Items.json in Resources */,
 				436E98D91AF29F1100F207FB /* SettingViewController.xib in Resources */,
+				4382E4261B033157002792F2 /* potato.jpg in Resources */,
 				436E988C1AEF2D2D00F207FB /* Main.storyboard in Resources */,
+				4382E42A1B0331C4002792F2 /* tomato.jpg in Resources */,
 				436E98911AEF2D2D00F207FB /* LaunchScreen.xib in Resources */,
 				436E988E1AEF2D2D00F207FB /* Images.xcassets in Resources */,
 			);

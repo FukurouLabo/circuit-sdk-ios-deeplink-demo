@@ -48,6 +48,7 @@
     
     cell.textLabel.text = [item objectForKey:@"name"];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@円", [item objectForKey:@"price"]];
+    cell.imageView.image = [UIImage imageNamed:[item objectForKey:@"img"]];
     return cell;
 }
 

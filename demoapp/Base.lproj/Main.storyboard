@@ -21,13 +21,13 @@
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kTb-wa-trw">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="77z-0c-hsn">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -90,7 +90,7 @@
                                     <constraint firstAttribute="height" constant="21" id="Xkx-wb-nay"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -100,13 +100,13 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="値段" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaF-2S-I3k">
-                                <rect key="frame" x="250" y="331" width="100" height="21"/>
+                                <rect key="frame" x="250" y="149" width="100" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="7Xd-ac-LDt"/>
                                     <constraint firstAttribute="width" constant="100" id="V9n-jX-VGG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -114,15 +114,22 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xtn-09-VPl">
-                                <rect key="frame" x="250" y="290" width="100" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="商品名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xtn-09-VPl">
+                                <rect key="frame" x="250" y="123" width="100" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Hog-BI-cgT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NUh-Xv-Uf0">
+                                <rect key="frame" x="195" y="213" width="210" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="IJw-La-Ihm"/>
+                                    <constraint firstAttribute="height" constant="140" id="yYc-TA-wkt"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -130,22 +137,33 @@
                             <constraint firstItem="vaF-2S-I3k" firstAttribute="top" secondItem="Xtn-09-VPl" secondAttribute="bottom" constant="20" id="4wP-wD-saR"/>
                             <constraint firstAttribute="centerY" secondItem="Xtn-09-VPl" secondAttribute="centerY" id="7Cj-HN-Xba"/>
                             <constraint firstAttribute="centerX" secondItem="dEr-2L-b28" secondAttribute="centerX" id="BNe-re-XnB"/>
+                            <constraint firstItem="dEr-2L-b28" firstAttribute="top" secondItem="NUh-Xv-Uf0" secondAttribute="bottom" constant="85" id="EzI-lD-ayq"/>
                             <constraint firstAttribute="centerX" secondItem="vaF-2S-I3k" secondAttribute="centerX" id="QeH-1p-Bsp"/>
                             <constraint firstItem="ppx-Qo-6Ni" firstAttribute="top" secondItem="dEr-2L-b28" secondAttribute="bottom" constant="34" id="Sfa-mL-zNH"/>
                             <constraint firstItem="VSA-sG-dTw" firstAttribute="top" secondItem="ppx-Qo-6Ni" secondAttribute="bottom" constant="107" id="Uk1-e4-uxz"/>
+                            <constraint firstAttribute="centerX" secondItem="NUh-Xv-Uf0" secondAttribute="centerX" id="WFp-8F-9HG"/>
+                            <constraint firstItem="NUh-Xv-Uf0" firstAttribute="top" secondItem="vaF-2S-I3k" secondAttribute="bottom" constant="13" id="XG7-77-sxe"/>
                             <constraint firstAttribute="centerX" secondItem="ppx-Qo-6Ni" secondAttribute="centerX" id="c6P-7C-Vx5"/>
+                            <constraint firstItem="NUh-Xv-Uf0" firstAttribute="top" secondItem="vaF-2S-I3k" secondAttribute="bottom" constant="43" id="nya-8g-DGy"/>
                             <constraint firstAttribute="centerX" secondItem="Xtn-09-VPl" secondAttribute="centerX" id="peR-7I-TcV"/>
+                            <constraint firstItem="dEr-2L-b28" firstAttribute="top" secondItem="NUh-Xv-Uf0" secondAttribute="bottom" constant="55" id="up4-pY-LoE"/>
                             <constraint firstItem="dEr-2L-b28" firstAttribute="top" secondItem="vaF-2S-I3k" secondAttribute="bottom" constant="56" id="vAu-HH-2CH"/>
+                            <constraint firstItem="dEr-2L-b28" firstAttribute="top" secondItem="NUh-Xv-Uf0" secondAttribute="bottom" constant="55" id="zkj-EL-NWf"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="4cg-oB-hoe"/>
                                 <exclude reference="7Cj-HN-Xba"/>
+                                <exclude reference="XG7-77-sxe"/>
+                                <exclude reference="EzI-lD-ayq"/>
+                                <exclude reference="up4-pY-LoE"/>
+                                <exclude reference="vAu-HH-2CH"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="商品詳細" id="Pv9-Pb-5yA"/>
                     <connections>
+                        <outlet property="itemImageView" destination="NUh-Xv-Uf0" id="3uT-XN-EBu"/>
                         <outlet property="itemName" destination="Xtn-09-VPl" id="jb1-bB-UQu"/>
                         <outlet property="itemPrice" destination="vaF-2S-I3k" id="M15-Fk-Jxo"/>
                     </connections>
@@ -171,13 +189,13 @@
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DOj-TN-rf9">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iZM-PH-gZw">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -227,7 +245,7 @@
                                     <constraint firstAttribute="width" constant="272" id="LR5-fw-7Bs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxM-9U-pbn">

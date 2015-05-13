@@ -73,6 +73,8 @@
     cell.textLabel.text = [item objectForKey:@"name"];
     NSString *price = [item objectForKey:@"price"];
     
+    cell.imageView.image = [UIImage imageNamed:[item objectForKey:@"img"]];
+    
     // 商品ごとの合計金額
     int totalPrice = price.intValue * cartItemQuantity.intValue;
     cell.detailTextLabel.text = [self getTotalPrice:price quantity:cartItemQuantity totalPrice:totalPrice];

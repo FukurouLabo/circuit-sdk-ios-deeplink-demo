@@ -28,6 +28,7 @@
     
     self.itemName.text = [item objectForKey:@"name"];
     self.itemPrice.text = [NSString stringWithFormat:@"%@円", [item objectForKey:@"price"]];
+    self.itemImageView.image = [UIImage imageNamed:[item objectForKey:@"img"]];
     
 }
 
