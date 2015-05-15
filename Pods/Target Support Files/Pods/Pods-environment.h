@@ -10,5 +10,5 @@
 #define COCOAPODS_POD_AVAILABLE_CircuitDeeplinkingSupporter
 #define COCOAPODS_VERSION_MAJOR_CircuitDeeplinkingSupporter 1
 #define COCOAPODS_VERSION_MINOR_CircuitDeeplinkingSupporter 0
-#define COCOAPODS_VERSION_PATCH_CircuitDeeplinkingSupporter 8
+#define COCOAPODS_VERSION_PATCH_CircuitDeeplinkingSupporter 9
 
