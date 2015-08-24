@@ -1,10 +1,10 @@
 PODS:
-  - CircuitDeeplinkingSupporter (1.0.9)
+  - Circuit (1.2.2)
 
 DEPENDENCIES:
-  - CircuitDeeplinkingSupporter
+  - Circuit
 
 SPEC CHECKSUMS:
-  CircuitDeeplinkingSupporter: 29dd57be467833c3425bcc0d99942f428cbe21e0
+  Circuit: f21d5cdd285284c44a4170965515f21eb1e2f977
 
-COCOAPODS: 0.37.1
+COCOAPODS: 0.38.2
