@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // 開発モードのON/OFF設定
-    [[CircuitDeepLink sharedInstance] setEnabledOutputLogging:YES];
+    [[CircuitDeepLink sharedInstance] setLogEnabled:YES];
     
     // SDK読み込み用のコード(CDS)
     [[CircuitDeepLink sharedInstance] setAppId:@"a0000063489"];
