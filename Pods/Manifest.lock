@@ -1,0 +1,10 @@
+PODS:
+  - Circuit (1.2.2)
+
+DEPENDENCIES:
+  - Circuit
+
+SPEC CHECKSUMS:
+  Circuit: f21d5cdd285284c44a4170965515f21eb1e2f977
+
+COCOAPODS: 0.38.2
