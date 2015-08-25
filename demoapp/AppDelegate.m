@@ -22,6 +22,7 @@
     
     // インストール後の初回起動時にCircuitサーバーと通信し、インストール前の各種情報を取得するために必要な処理
     // ※以下の処理は初回起動時のみ動きます。NSUserDefaultへ初回起動なのかどうかの状態を保存します。アプリを削除すると初回判定の情報も消えます。
+    // ※FingerPringting方式
     [CircuitDirect setAppId:@"da87802909047102" callback:^(NSError *error) {
         if ( error ) {
             NSLog(@"error: %@", error);
