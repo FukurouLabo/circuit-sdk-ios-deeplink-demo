@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <CircuitDeepLinking/CircuitDeepLink.h>
 
 @interface AppDelegate ()
 
@@ -17,8 +18,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    [self initData];
+    [[CircuitDeepLink sharedInstance] setDevelopmentMode:YES]; // 開発モードのON/OFF
     
+    // インストール後の初回起動時にCircuitサーバーと通信し、インストール前の各種情報を取得するために必要な処理
+    // ※以下の処理は初回起動時のみ動きます。NSUserDefaultへ初回起動なのかどうかの状態を保存します。アプリを削除すると初回判定の情報も消えます。
+    [CircuitDirect setAppId:@"da87802909047102" callback:^(NSError *error) {
+        if ( error ) {
+            NSLog(@"error: %@", error);
+        }
+    }];
+    
+    // Circuitディープリンクサポーターと連携してディープリンクで遷移する場合に必要な処理
+    [[CircuitDeepLink sharedInstance] setAppId:@"a0000064737" callback:^(NSError *error) {
+        if ( error ) {
+            NSLog(@"Error: %@", error);
+        } else {
+        }
+    }];
+    
+    [self initData];
     return YES;
 }
 
@@ -81,5 +99,13 @@
     }
     [ud setObject:jsonObject forKey:@"items"];
 }
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    // Circuitディープリンクサポーターと連携してディープリンクで遷移する場合でアプリ起動した際の処理
+    [[CircuitDeepLink sharedInstance] routeUsingUrl:url];
+    return YES;
+}
+
 
 @end
