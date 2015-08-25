@@ -8,6 +8,7 @@
 
 #import "ItemDetailViewController.h"
 #import "CartTableViewController.h"
+#import <CircuitDeepLinking/CircuitDeepLink.h>
 
 @interface ItemDetailViewController ()
 
@@ -51,10 +52,11 @@
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     NSDictionary *items = [ud dictionaryForKey:@"items"];
     
-    //deeplinkでの遷移の場合CDSitemIdを使う
-    if (self.CDSitemId != nil)
+    // Directで習得したパラメータから商品IDを習得
+    CircuitDirectResponseModel *model = [CircuitDirect getCircuitDirectResponseModel];
+    if (model.directLinkQueryStrings[@"CDSitemId"] != nil)
     {
-        self.itemId = self.CDSitemId;
+        self.itemId = model.directLinkQueryStrings[@"CDSitemId"];
     }
     
     return [items objectForKey:self.itemId];
