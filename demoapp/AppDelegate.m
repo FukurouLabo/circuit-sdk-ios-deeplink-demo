@@ -24,8 +24,11 @@
     [[CircuitDeepLink sharedInstance] setAppId:@"a0000063489"];
     
     // 遷移前に実行するアクション(CDS)
-    [[CircuitDeepLink sharedInstance] registerHandlerWithName:@"beforeMoveItemDetail" handler:^void(NSDictionary *params) {
+    // 返り値がYESの場合、遷移は行わず、NOの場合は遷移を行う
+    [[CircuitDeepLink sharedInstance] registerHandlerWithNameAndContinue:@"beforeMoveItemDetail" handler:^BOOL(NSDictionary *params) {
         NSLog(@"beforeMoveItemDetail");
+        
+        return NO;
     }];
     [self initData];
     
