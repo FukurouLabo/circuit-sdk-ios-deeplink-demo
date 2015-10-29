@@ -1,4 +1,4 @@
-// CircuitDeeplinkingSupporter-1.3.0
+// CircuitDeeplinkingSupporter-1.3.1
 
 // Copyright 2015 FukurouLabo
 // http://fukurou-labo.co.jp/

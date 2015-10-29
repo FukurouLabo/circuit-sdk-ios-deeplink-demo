@@ -1,10 +1,10 @@
 PODS:
-  - Circuit (1.3.0)
+  - Circuit (1.3.1)
 
 DEPENDENCIES:
   - Circuit
 
 SPEC CHECKSUMS:
-  Circuit: 06e2e439505cc070656700657afbe6230087b9dd
+  Circuit: 267b28f9fcff4df4c99134ab24550b310f40500e
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0
