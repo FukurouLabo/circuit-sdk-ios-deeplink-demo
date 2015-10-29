@@ -59,6 +59,11 @@
         self.itemId = model.directLinkQueryStrings[@"CDSitemId"];
     }
     
+    //通常のdeeplink遷移の場合CDSitemIdを使う
+    if (self.CDSitemId != nil) {
+        self.itemId = self.CDSitemId;
+    }
+    
     return [items objectForKey:self.itemId];
 }
 

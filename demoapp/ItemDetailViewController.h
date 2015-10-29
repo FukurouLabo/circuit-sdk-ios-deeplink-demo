@@ -16,4 +16,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *itemPrice;
 @property (weak, nonatomic) IBOutlet UIImageView *itemImageView;
 
+// ディープリンク内のクエリパラメータ(CDS)
+@property(nonatomic, strong) id CDSitemId;
 @end
