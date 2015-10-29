@@ -52,6 +52,13 @@
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     NSDictionary *items = [ud dictionaryForKey:@"items"];
     
+    // Directで習得したパラメータから商品IDを習得
+    CircuitDirectResponseModel *model = [CircuitDirect getCircuitDirectResponseModel];
+    if (model.directLinkQueryStrings[@"CDSitemId"] != nil)
+    {
+        self.itemId = model.directLinkQueryStrings[@"CDSitemId"];
+    }
+    
     // Circuitディープリンクサポーターで取得したCDSitemIdを使用
     if (self.CDSitemId != nil)
     {
